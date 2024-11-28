@@ -1,0 +1,120 @@
+(track evrey thing
+=======meta data=====
+history
+id for evrey thing
+tree hirarcy
+path of the file
+
+)
+
+git init on ur working dirctery 
+git config --globall user.name ""  (for only this user)
+git config --globall user.email ""  (for only this user)
+
+git ls-files  //to see what is inside staging area
+
+git ls-files -s  displaying the sha for the files and (staging index)
+
+git add // staging the file from working trea
+git add f* or *.txt or * (all) // working with regex
+
+git status // to show all status index areea commited
+git status -s // to show short status 
+
+git cat-file -t (sha)//type of this hash(type,size,content) file (blob)
+git cat-file -s (sha)//size of this hash(type,size,content) file (blob)
+git cat-file -p (sha)//content of this hash(type,size,content) file (blob)
+
+git commit -m "massage" //-m initalize first version and make massage
+git commit // open editor to write your massage
+git commit -am ""//to add and commit 
+git commit --amend // to change last commit massage
+
+
+git log // logs of commits
+git log --oneline ()allFiles // 1line logs of commits
+git log --oneline (filename) // 1line logs of file commits
+git log --oneline -2  // 1line logs of last two commits
+git reflog
+
+git show
+git show HEAD
+
+git tag -a "name of the tag"(of the last commit) -m"massage"
+
+
+
+u intracked
+M (red) modified not indexed nor commited
+M (Green) indexed  bu not commited
+
+git diff () allfiles or (filename) // diff between wT and index area 
+git dif --staged // diff between Repo and index area 
+
+========diff between two commits========
+git log --oneline --graph    to show the sha of all commites
+
+git diff sha1..sha2 
+git dif sh1..HEAD (poiter)//..contain hash refaring to certine file
+or git show sha
+
+git mv to rename or remove any file
+
+rm -rf .git/ to remove the repo 
+
+git rm --cached (filename) // to remove files from index area
+
+not added yet
+git restore (file name) // restor the file state from last satged state to wt   
+
+adfter add
+git restore --staged //to un stage
+then git restore
+
+git config --global core.editor "vim/nano" when u want add along m with editor (git commit) without m
+  
+git reset head // from repo to staging area
+git reset head --hard // from repo to working Trea dirctly
+git reset HEAD ~1or 2 // back one commit
+git reset --hard HEAD ~1or 2 // back one commit
+
+git reset HEAD@ {ref} (from reflog)
+git reflog //
+
+git branch (name of the branch)//to create a branch
+git branch//to see the branches(green)=> current branch if u add new commit *=HEAD == working tea content 
+git switch (branchNAme) to switch Between branches
+git merge (name of the branch)
+git branch --merged 
+git branch -d (name of the branch)//to delet any branch
+git branch -r // from remote
+git branch -v 
+git branch -vv//branches and thair origin(remote name)
+git branch -m (name u want) (to rename the branch)
+git rebase
+
+
+git clone (location) (name u want to rename) //cloning
+
+git remote // if origin this repo taken from another repo
+git remote add (name)// add another origrn
+git remote -v//url origin 
+git remote add ssh-origin (ssh link)
+[fetch: get from repo to local (Dowen stream) Download]
+[push: get from local to repo (Up stream) Upload]
+
+
+git fetch (name)//not into working dirctery ==> git status
+after yhis we do git merge
+
+git push -u(--set-upstream) // for adding a new branch in the remote repo 
+
+git pull (origin) //git fetch and merge
+
+alias (name of the alias) ="bash u want to alias"
+
+make empty repo on git hub 
+
+git remote -v
+
+git push (origin)(branch)
