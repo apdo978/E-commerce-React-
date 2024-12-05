@@ -20,7 +20,7 @@ import Effect from "./useEffect/useEffect";
 // import Window from "./bomUseEffect";
 import DigitalClock from "./digitalClocks/DigitalClock";
 import NavBar from "./NavBar";
-
+import Homepage from "./homepagecomp";
 function App (){
   // const fruit = [{id:1,name:"orange"}
   //   ,{id:2,name:"apple"}
@@ -71,10 +71,14 @@ function App (){
 {/* <Effect/> */}
 {/* <Window/> */}
 {/* <DigitalClock/> */}
-<NavBar/>
-
+<div className="Renderd-Div">
+  <Homepage/>
+</div>
     </>
     
   );
 }
 export default App
+//nav bar
+//render page if(window.location.pathname == componant )return componant
+//i will make path name for evrey componant 

@@ -1,0 +1,45 @@
+
+.DetailsPAge{
+    margin: 0,5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.DetailsPAgeimg{
+    border-radius: 50%;
+    transition: 0.5s;
+    
+}
+.DetailsPAgeimg:hover{
+    transform: scale(1.5);
+    border-radius: 0%;
+}
+
+.store-button {
+    display: flex; /* لجعل الأيقونة والنص بجانب بعض */
+    align-items: center; /* لتوسيط المحتوى عموديًا */
+    justify-content: center; /* لتوسيط المحتوى أفقيًا */
+    padding: 10px 20px; /* مسافة داخلية */
+    background-color: #007BFF; /* لون خلفية الزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* زوايا دائرية */
+    font-size: 16px; /* حجم النص */
+    cursor: pointer; /* تحويل المؤشر إلى يد عند التمرير */
+    transition: background-color 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
+
+.store-button img {
+    width: 20px; /* حجم الأيقونة */
+    height: 20px; /* حجم الأيقونة */
+    margin-right: 10px; /* مسافة بين الأيقونة والنص */
+}
+
+.store-button:hover {
+    background-color: #0056b3; /* تغيير لون الزر عند التمرير */
+}

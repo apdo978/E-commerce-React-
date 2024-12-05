@@ -262,7 +262,9 @@ border-radius: 5px;
     *{ box-sizing: border-box;
     }
       body{
-        margin: 0px;
+        margin-top: 70px;       
+        margin-left: 0px;
+        
         height: 2000px;
         background-repeat: no-repeat;
         background-attachment:fixed ;
@@ -276,12 +278,12 @@ width: 53px;
       }
       ul{
         height: 50px;
-        width: 99vw;
+        width: 100vw;
         display: flex;
             list-style: none;
             background: #333333;
-        margin: 0px;
-        padding: 0px;
+        margin: 0px ;
+        padding: 20px;
       justify-content: flex-end;
       align-items: center;
       margin-bottom: 10px;
@@ -341,10 +343,10 @@ position: relative;
     transition: 0.5s;
     }
     
-    .arrow.left:hover{
+    .arrowDiv:hover .arrow.left {
       transform: rotate(-145deg);
     }
-    .arrow.right:hover{
+    .arrowDiv:hover .arrow.right{
       transform: rotate(-315deg);
     }
     .arrow.left {
@@ -435,4 +437,25 @@ flex-direction: row;
 }
 .card div:hover{
   transform: scale(1.1);
+}
+
+.About{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.Contact-Us{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.arrowDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+height: 400px;
+ width: 100px;
+ cursor: pointer;
 }

@@ -118,3 +118,11 @@ make empty repo on git hub
 git remote -v
 
 git push (origin)(branch)
+
+ 
+all react functions must be pure functions 
+function(a,b)=> a+b (pure) not changing its own parameters (props)
+impure func changs its own parameter func(account,amount)=>accoun-=amount (impure)
+
+functions is stateless componant 
+class are stateful componant
